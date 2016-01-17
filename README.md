@@ -22,7 +22,7 @@ Or install it yourself as:
 
 **Configuration**
 
-1. You may store your Billplz configuration during runtime:
+You may store your Billplz configuration during runtime:
 
 ```ruby
 # config/initializers/billplz.rb
@@ -31,13 +31,13 @@ Billplz.configure do |config|
 end
 ```
 
-2. All the options above can be overridden manually:
+All the options above can be overridden manually:
 
 ```ruby
 Billplz.configuration.api_key      = 'your-api-key'
 ```
 
-3. Or, as a hash:
+Or, as a hash:
 
 ```ruby
 Billplz.configuration = { api_key: 'your-api-key' }
