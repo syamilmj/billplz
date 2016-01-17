@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-** Configuration **
+**Configuration**
 
 1. You may store your Billplz configuration during runtime:
 
@@ -43,7 +43,7 @@ Billplz.configuration.api_key      = 'your-api-key'
 Billplz.configuration = { api_key: 'your-api-key' }
 ```
 
-** Collection **
+**Collection**
 
 Create a new collection:
 
@@ -52,7 +52,7 @@ collection = Billplz::Collection.new({ title: 'My awesome collection' })
 collection.create
 ```
 
-** Bill **
+**Bill**
 
 Create a new bill:
 
@@ -75,7 +75,7 @@ bill = Billplz::Bill.new({ bill_id: 'abc123'})
 bill.delete
 ```
 
-** Response **
+**Response**
 
 Standard Net::HTTP response will be returned by all of the above methods. However, the gem packed a few helper methods to make your life easier:
 
