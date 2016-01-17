@@ -1,5 +1,7 @@
 # Billplz
 
+[![Circle CI](https://circleci.com/gh/syamilmj/billplz.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/syamilmj/billplz)
+
 An abstraction library to interface with the [Billplz API](https://www.billplz.com/api)
 
 ## Installation
