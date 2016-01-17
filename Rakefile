@@ -20,3 +20,9 @@ namespace :test do
     t.verbose = true
   end
 end
+
+desc "Tag and release"
+task :tag_release do
+  system "git tag 'v#{Billplz::VERSION}'"
+  system "git push --tags"
+end

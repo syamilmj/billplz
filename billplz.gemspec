@@ -9,11 +9,11 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Abstraction library to interface with the Billplz API'
   spec.homepage      = 'http://tideee.com'
-  spec.license       = "MIT"
+  spec.license       = 'MIT'
 
-  s.author           = 'Syamil MJ'
-  s.email            = 'syamilmj@tideee.com'
-  s.homepage         = 'http://tideee.com/'
+  spec.author        = 'Syamil MJ'
+  spec.email         = 'syamilmj@tideee.com'
+  spec.homepage      = 'http://tideee.com/'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
