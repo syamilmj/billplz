@@ -16,11 +16,11 @@ gem 'billplz'
 
 And then execute:
 
-    $ bundle
+  $ bundle
 
 Or install it yourself as:
 
-    $ gem install billplz
+  $ gem install billplz
 
 ## Usage
 
@@ -31,14 +31,14 @@ You may store your Billplz configuration during runtime:
 ```ruby
 # config/initializers/billplz.rb
 Billplz.configure do |config|
-  config.api_key      = ENV['BILLPLZ_API_KEY']
+  config.api_key = ENV['BILLPLZ_API_KEY']
 end
 ```
 
 All the options above can be overridden manually:
 
 ```ruby
-Billplz.configuration.api_key      = 'your-api-key'
+Billplz.configuration.api_key = 'your-api-key'
 ```
 
 Or, as a hash:
@@ -85,27 +85,25 @@ Standard Net::HTTP response will be returned by all of the above methods. Howeve
 
 1. `#success?`
 
-You can check for a successfull request using `success?`, example:
+  You can check for a successfull request using `success?`, example:
 
-```
-bill.success?
-```
+  ```
+  bill.success?
+  ```
 
 2. `#parsed_json`
 
-This is a convenient helper to parse the JSON response from the API, example:
+  A convenient helper to parse the JSON response from the API, example:
 
-```ruby
-bill_id = bill.parsed_json['id']
-```
+  ```ruby
+  bill_id = bill.parsed_json['id']
+  ```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Run `rake test` to run the unit tests.
 
 Running `rake test:remote` will run tests that performs actual communication with the API server. Proceed with caution.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
