@@ -1,8 +1,8 @@
 # Billplz
 
 [![Gem Version](https://badge.fury.io/rb/billplz.svg)](https://badge.fury.io/rb/billplz)
-[![Circle CI](https://circleci.com/gh/syamilmj/billplz.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/syamilmj/billplz)
-[![Code Climate](https://codeclimate.com/github/syamilmj/billplz/badges/gpa.svg)](https://codeclimate.com/github/syamilmj/billplz)
+[![Circle CI](https://circleci.com/gh/tideee/billplz.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/tideee/billplz)
+[![Code Climate](https://codeclimate.com/github/tideee/billplz/badges/gpa.svg)](https://codeclimate.com/github/tideee/billplz)
 
 An abstraction library to interface with the [Billplz API](https://www.billplz.com/api)
 
@@ -111,7 +111,7 @@ Running `rake test:remote` will run tests that performs actual communication wit
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/syamilmj/billplz. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tideee/billplz. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
