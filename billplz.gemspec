@@ -8,16 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Billplz::VERSION
 
   spec.summary       = 'Abstraction library to interface with the Billplz API'
-  spec.homepage      = 'http://tideee.com'
   spec.license       = 'MIT'
-
   spec.author        = 'Syamil MJ'
   spec.email         = 'syamilmj@tideee.com'
   spec.homepage      = 'http://tideee.com/'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "rake"
