@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.author        = 'Syamil MJ'
   spec.email         = 'syamilmj@tideee.com'
-  spec.homepage      = 'http://tideee.com/'
+  spec.homepage      = 'https://github.com/tideee/billplz'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
