@@ -16,11 +16,15 @@ gem 'billplz'
 
 And then execute:
 
-  $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-  $ gem install billplz
+```
+$ gem install billplz
+```
 
 ## Usage
 
