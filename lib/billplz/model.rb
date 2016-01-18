@@ -61,6 +61,8 @@ module Billplz
     def http
       http = Net::HTTP.new(endpoint.host, endpoint.port)
       http.use_ssl = true
+      http.open_timeout = Billplz.configuration.http_timeout
+      http.read_timeout = Billplz.configuration.http_timeout
       # http.set_debug_output($stdout)
       http
     end
