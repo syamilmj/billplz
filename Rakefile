@@ -22,7 +22,7 @@ namespace :test do
 end
 
 desc "Tag and release"
-task :tag_release do
+task :release do
   system "git tag 'v#{Billplz::VERSION}'"
   system "git push --tags"
 end
