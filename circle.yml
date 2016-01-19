@@ -1,7 +1,8 @@
-ruby:
-  version:
-    2.3.0
-environment:
-  CIRCLE_ENV: test
+machine:
+  ruby:
+    version: 2.3.0
+  environment:
+    CIRCLE_ENV: test
 dependencies:
-  pre: gem install bundler -v 1.11.2
+  pre: 
+    - gem install bundler -v 1.11.2
