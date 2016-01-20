@@ -4,7 +4,7 @@ require 'test_helper'
 #
 # It's being excluded from the :default rake task to minimise
 # risk of accidentally flooding the server with tests data
-class RemoteTest < Test::Unit::TestCase
+class RemoteTest < Minitest::Test
   def setup
     Billplz.reset
     Billplz.configuration.api_key = fixtures(:api_key)

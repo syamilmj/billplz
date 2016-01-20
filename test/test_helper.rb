@@ -1,12 +1,12 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require 'billplz'
-require 'test/unit'
+require 'minitest/autorun'
 require 'securerandom'
 require 'mocha/test_unit'
 require 'yaml'
 
-class Test::Unit::TestCase
+class Minitest::Test
   def fixtures(key)
     fixtures = YAML.load_file(File.join(File.dirname(__FILE__), 'fixtures.yml'))
     fixtures[key.to_s]

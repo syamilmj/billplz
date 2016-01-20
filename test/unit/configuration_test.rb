@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ConfigurationTest < Test::Unit::TestCase
+class ConfigurationTest < Minitest::Test
   def setup
     @api_key = SecureRandom.uuid
     Billplz.reset

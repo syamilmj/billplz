@@ -6,7 +6,7 @@ require 'test_helper'
 # risk of accidentally flooding the server with tests data
 # 
 # For sake of brevity, only one remote test class is created
-class RemoteTest < Test::Unit::TestCase
+class RemoteTest < Minitest::Test
   def setup
     Billplz.reset
     Billplz.configuration.api_key = fixtures(:api_key)
