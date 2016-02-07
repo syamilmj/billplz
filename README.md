@@ -30,7 +30,7 @@ $ gem install billplz
 
 **Configuration**
 
-You may store your Billplz configuration during runtime:
+You may store your Billplz configuration during initialization:
 
 ```ruby
 # config/initializers/billplz.rb
@@ -39,7 +39,7 @@ Billplz.configure do |config|
 end
 ```
 
-All the options above can be overridden manually:
+All the options above can be overridden during runtime:
 
 ```ruby
 Billplz.configuration.api_key = 'your-api-key'
@@ -107,7 +107,7 @@ Standard Net::HTTP response will be returned by all of the above methods. Howeve
 
 Run `rake test` to run the unit tests.
 
-Running `rake test:remote` will run tests that performs actual communication with the API server. Proceed with caution.
+Running `rake test:remote` will run tests that perform actual communication with the API server. Proceed with caution.
 
 ## Contributing
 
