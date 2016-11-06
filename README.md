@@ -73,7 +73,13 @@ Get a bill:
 
 ```ruby
 bill = Billplz::Bill.new({ bill_id: 'abc123'})
-bill.get
+bill = bill.get
+
+# state (due, overdue and paid)
+bill['state']
+
+# paid (return false for due and overdue bill; true for paid bill)
+bill['paid']
 ```
 
 Delete a bill:
