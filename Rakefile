@@ -8,14 +8,14 @@ task :test => 'test:unit'
 namespace :test do
   Rake::TestTask.new(:unit) do |t|
     t.pattern = 'test/unit/**/*_test.rb'
-    t.ruby_opts << '-rubygems -w'
+    t.ruby_opts << '-w'
     t.libs << 'test'
     t.verbose = true
   end
 
   Rake::TestTask.new(:remote) do |t|
     t.pattern = 'test/remote/**/*_test.rb'
-    t.ruby_opts << '-rubygems -w'
+    t.ruby_opts << '-w'
     t.libs << 'test'
     t.verbose = true
   end
