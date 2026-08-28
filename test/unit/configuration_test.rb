@@ -33,6 +33,25 @@ class ConfigurationTest < Minitest::Test
   def test_it_assigns_hash_configurations
     Billplz.configuration = { api_key: @api_key, http_timeout: 120 }
 
-    assert_equal({ api_key: @api_key, http_timeout: 120, mode: 'live' }, Billplz.options)
+    assert_equal({ api_key: @api_key, x_signature_key: nil, http_timeout: 120, mode: 'live' }, Billplz.options)
+  end
+
+  def test_it_accepts_options_on_initialize
+    config = Billplz::Configuration.new(api_key: @api_key, mode: 'sandbox')
+
+    assert_equal(@api_key, config.api_key)
+    assert config.sandbox?
+  end
+
+  def test_it_defaults_to_the_live_host
+    refute Billplz.configuration.sandbox?
+    assert_equal 'https://www.billplz.com/api', Billplz.configuration.host
+  end
+
+  def test_sandbox_mode_switches_the_host
+    Billplz.configuration.mode = 'sandbox'
+
+    assert Billplz.configuration.sandbox?
+    assert_equal 'https://www.billplz-sandbox.com/api', Billplz.configuration.host
   end
 end
